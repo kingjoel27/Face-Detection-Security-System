@@ -15,18 +15,18 @@ This project implements a basic security system that combines real-time face and
 ## Technologies Used
 - Python 3
 - OpenCV
-- NumPy
 - BeagleBone Black
 - Linux (Debian)
 - Matrix Keypad
+- Logitech C270 USB camera
 
 ---
 
 ## How It Works
-- A USB camera captures live video frames.
-- OpenCV processes each frame to detect faces and objects.
-- A matrix keypad allows the user to enter a passcode.
+- A USB camera is used to check if a face has been detected 
+- A matrix keypad is enabled for user to enter passcode if face is within the frame.
 - Access is granted or denied based on correct passcode entry.
-- The entire system runs on a BeagleBone Black.
+- User is alerted if passcode is valid by using red/green LED's
+- System captures picture of user after many failed attempts, which can then be accessed within the device.
 
 ---
