@@ -24,7 +24,7 @@ This project implements a basic security system that combines real-time face and
 
 ## How It Works
 - A USB camera is used to check if a face has been detected 
-- A matrix keypad is enabled for user to enter passcode if face is within the frame.
+- The system activates a matrix keypad for passcode entry only when a detected face is present within the camera’s field of view.
 - Access is granted or denied based on correct passcode entry.
 - User is alerted if passcode is valid by using red/green LED's
 - System captures picture of user after many failed attempts, which can then be accessed within the device.
